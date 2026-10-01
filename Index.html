@@ -1,2583 +1,829 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>King Lyon | Nigerian Runway & Editorial Model</title>
-
-<meta name="description" content="King Lyon is a Nigerian runway, editorial and fashion model based in Uyo, Akwa Ibom. Available for runway shows, fashion campaigns, editorial shoots, brand collaborations and international bookings.">
-
-<meta name="keywords" content="King Lyon, Nigerian male model, Uyo model, Akwa Ibom model, Nigerian runway model, editorial model Nigeria, fashion model Nigeria">
-
-<meta name="author" content="King Lyon">
-
-<meta property="og:title" content="King Lyon | Runway. Editorial. Fashion.">
-<meta property="og:description" content="Nigerian runway, editorial and fashion model available for local and international bookings.">
-<meta property="og:type" content="website">
-
-<meta name="theme-color" content="#080808">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
-
-<style>
-
-:root{
---black:#050505;
---charcoal:#0c0c0c;
---dark:#111;
---gold:#d4af37;
---gold2:#f1d77b;
---white:#fff;
---muted:#999;
---line:rgba(255,255,255,.10);
---goldline:rgba(212,175,55,.28);
---serif:"Playfair Display",Georgia,serif;
---sans:"DM Sans",Arial,sans-serif;
---max:1200px;
-}
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-html{
-scroll-behavior:smooth;
-}
-
-body{
-background:var(--black);
-color:var(--white);
-font-family:var(--sans);
-line-height:1.6;
-overflow-x:hidden;
-}
-
-body:before{
-content:"";
-position:fixed;
-inset:0;
-pointer-events:none;
-background:
-radial-gradient(circle at 20% 10%,rgba(212,175,55,.035),transparent 25%),
-radial-gradient(circle at 90% 70%,rgba(212,175,55,.025),transparent 25%);
-z-index:-1;
-}
-
-a{
-color:inherit;
-text-decoration:none;
-}
-
-button,
-input,
-select,
-textarea{
-font:inherit;
-}
-
-img{
-max-width:100%;
-display:block;
-}
-
-.container{
-width:min(92%,var(--max));
-margin:auto;
-}
-
-.gold{
-color:var(--gold);
-}
-
-.section{
-padding:110px 0;
-}
-
-.label{
-color:var(--gold);
-font-size:.72rem;
-font-weight:800;
-letter-spacing:.25em;
-text-transform:uppercase;
-margin-bottom:15px;
-}
-
-.title{
-font-family:var(--serif);
-font-size:clamp(2.8rem,7vw,5.8rem);
-line-height:.95;
-letter-spacing:-.04em;
-margin-bottom:25px;
-}
-
-.intro{
-max-width:680px;
-color:var(--muted);
-font-size:1rem;
-}
-
-/* =========================
-NAV
-========================= */
-
-nav{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-z-index:999;
-background:rgba(5,5,5,.78);
-backdrop-filter:blur(18px);
-border-bottom:1px solid rgba(255,255,255,.06);
-}
-
-.nav-inner{
-height:74px;
-display:flex;
-align-items:center;
-justify-content:space-between;
-}
-
-.logo{
-font-family:var(--serif);
-font-size:1.4rem;
-font-weight:800;
-letter-spacing:.06em;
-}
-
-.nav-links{
-display:flex;
-gap:25px;
-align-items:center;
-font-size:.78rem;
-font-weight:700;
-}
-
-.nav-links a{
-color:#ccc;
-transition:.25s;
-}
-
-.nav-links a:hover{
-color:var(--gold);
-}
-
-.nav-book{
-background:var(--gold);
-color:#000!important;
-padding:10px 17px;
-border-radius:999px;
-}
-
-@media(max-width:720px){
-.nav-links a:not(.nav-book){
-display:none;
-}
-}
-
-/* =========================
-FLOAT BOOK BUTTON
-========================= */
-
-.float-book{
-position:fixed;
-right:18px;
-bottom:18px;
-z-index:1000;
-background:var(--gold);
-color:#000;
-font-weight:800;
-font-size:.76rem;
-padding:14px 20px;
-border-radius:999px;
-box-shadow:0 12px 35px rgba(0,0,0,.5);
-transition:.25s;
-}
-
-.float-book:hover{
-transform:translateY(-4px);
-background:var(--gold2);
-}
-
-/* =========================
-HERO
-========================= */
-
-.hero{
-min-height:100svh;
-position:relative;
-display:flex;
-align-items:flex-end;
-overflow:hidden;
-background:
-radial-gradient(circle at 72% 20%,rgba(212,175,55,.14),transparent 28%),
-linear-gradient(140deg,#141414,#050505);
-}
-
-.hero-image{
-position:absolute;
-inset:0;
-background:
-linear-gradient(135deg,#181818,#070707);
-}
-
-.hero-image:after{
-content:"KING LYON";
-position:absolute;
-right:-20px;
-bottom:8%;
-font-family:var(--serif);
-font-size:clamp(6rem,20vw,17rem);
-font-weight:800;
-color:rgba(255,255,255,.025);
-white-space:nowrap;
-}
-
-.hero-overlay{
-position:absolute;
-inset:0;
-background:
-linear-gradient(180deg,rgba(0,0,0,.1),rgba(0,0,0,.96)),
-linear-gradient(90deg,rgba(0,0,0,.8),transparent 80%);
-}
-
-.hero-content{
-position:relative;
-z-index:2;
-padding:160px 0 80px;
-max-width:900px;
-}
-
-.kicker{
-color:var(--gold);
-font-weight:800;
-font-size:.72rem;
-letter-spacing:.28em;
-text-transform:uppercase;
-margin-bottom:20px;
-}
-
-.hero h1{
-font-family:var(--serif);
-font-size:clamp(3.7rem,11vw,9rem);
-line-height:.84;
-letter-spacing:-.055em;
-margin-bottom:28px;
-}
-
-.hero h1 span{
-color:var(--gold);
-}
-
-.hero-sub{
-max-width:680px;
-font-size:clamp(1rem,2vw,1.25rem);
-color:#ddd;
-margin-bottom:32px;
-}
-
-.hero-buttons{
-display:flex;
-flex-wrap:wrap;
-gap:12px;
-}
-
-.btn{
-display:inline-flex;
-align-items:center;
-justify-content:center;
-min-height:51px;
-padding:0 23px;
-border-radius:3px;
-font-weight:800;
-font-size:.78rem;
-letter-spacing:.07em;
-text-transform:uppercase;
-transition:.25s;
-cursor:pointer;
-border:1px solid transparent;
-}
-
-.btn-gold{
-background:var(--gold);
-color:#050505;
-}
-
-.btn-gold:hover{
-background:var(--gold2);
-transform:translateY(-3px);
-}
-
-.btn-outline{
-border-color:rgba(255,255,255,.25);
-background:rgba(0,0,0,.25);
-color:white;
-}
-
-.btn-outline:hover{
-border-color:var(--gold);
-color:var(--gold);
-}
-
-/* =========================
-TRUST BAR
-========================= */
-
-.trust{
-border-top:1px solid var(--line);
-border-bottom:1px solid var(--line);
-background:#090909;
-}
-
-.trust-grid{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-}
-
-.trust-item{
-padding:24px 15px;
-border-right:1px solid var(--line);
-text-align:center;
-}
-
-.trust-item:last-child{
-border-right:0;
-}
-
-.trust-item strong{
-display:block;
-font-family:var(--serif);
-font-size:1.25rem;
-color:var(--gold);
-}
-
-.trust-item span{
-display:block;
-font-size:.68rem;
-color:#777;
-text-transform:uppercase;
-letter-spacing:.12em;
-}
-
-@media(max-width:650px){
-.trust-grid{
-grid-template-columns:1fr 1fr;
-}
-.trust-item{
-border-bottom:1px solid var(--line);
-}
-}
-
-/* =========================
-INTRO
-========================= */
-
-.intro-section{
-background:#0b0b0b;
-}
-
-.intro-grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:70px;
-align-items:center;
-}
-
-.statement{
-font-family:var(--serif);
-font-size:clamp(2.3rem,5vw,4.8rem);
-line-height:1.02;
-}
-
-.copy{
-color:#999;
-font-size:1rem;
-}
-
-.copy p+p{
-margin-top:18px;
-}
-
-@media(max-width:760px){
-.intro-grid{
-grid-template-columns:1fr;
-gap:30px;
-}
-}
-
-/* =========================
-WHO HE WORKS WITH
-========================= */
-
-.client-grid{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:12px;
-margin-top:45px;
-}
-
-.client-card{
-padding:35px 22px;
-border:1px solid #222;
-background:#0d0d0d;
-transition:.3s;
-}
-
-.client-card:hover{
-border-color:var(--gold);
-transform:translateY(-5px);
-}
-
-.client-number{
-color:var(--gold);
-font-family:var(--serif);
-font-size:2rem;
-margin-bottom:18px;
-}
-
-.client-card h3{
-font-family:var(--serif);
-font-size:1.3rem;
-margin-bottom:8px;
-}
-
-.client-card p{
-color:#777;
-font-size:.82rem;
-}
-
-@media(max-width:800px){
-.client-grid{
-grid-template-columns:1fr 1fr;
-}
-}
-
-@media(max-width:500px){
-.client-grid{
-grid-template-columns:1fr;
-}
-}
-
-/* =========================
-PORTFOLIO
-========================= */
-
-.portfolio{
-background:#0a0a0a;
-}
-
-.tabs{
-display:flex;
-gap:8px;
-flex-wrap:wrap;
-margin:32px 0;
-}
-
-.tab{
-background:transparent;
-border:1px solid #333;
-color:#aaa;
-padding:10px 17px;
-border-radius:999px;
-cursor:pointer;
-font-size:.75rem;
-font-weight:700;
-letter-spacing:.08em;
-text-transform:uppercase;
-}
-
-.tab.active,
-.tab:hover{
-background:var(--gold);
-border-color:var(--gold);
-color:#000;
-}
-
-.gallery{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:12px;
-}
-
-.gallery-card{
-position:relative;
-min-height:430px;
-background:
-linear-gradient(145deg,#191919,#080808);
-border:1px solid #222;
-overflow:hidden;
-}
-
-.gallery-card:nth-child(2){
-min-height:560px;
-}
-
-.gallery-card:nth-child(3){
-min-height:480px;
-}
-
-.gallery-card:after{
-content:"KING LYON";
-position:absolute;
-bottom:20px;
-left:20px;
-font-family:var(--serif);
-font-size:1.1rem;
-color:rgba(255,255,255,.2);
-}
-
-.gallery-label{
-position:absolute;
-top:18px;
-left:18px;
-z-index:2;
-background:rgba(0,0,0,.6);
-border:1px solid rgba(212,175,55,.35);
-color:var(--gold);
-padding:7px 10px;
-font-size:.65rem;
-letter-spacing:.12em;
-text-transform:uppercase;
-}
-
-@media(max-width:760px){
-.gallery{
-grid-template-columns:1fr 1fr;
-}
-
-.gallery-card,
-.gallery-card:nth-child(2),
-.gallery-card:nth-child(3){
-min-height:330px;
-}
-}
-
-/* =========================
-MOTION
-========================= */
-
-.video-grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:15px;
-margin-top:40px;
-}
-
-.video{
-aspect-ratio:16/10;
-border:1px solid #252525;
-background:
-radial-gradient(circle at center,rgba(212,175,55,.1),transparent 30%),
-#111;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-}
-
-.play{
-width:62px;
-height:62px;
-border:1px solid var(--gold);
-border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-color:var(--gold);
-font-size:1.3rem;
-}
-
-@media(max-width:700px){
-.video-grid{
-grid-template-columns:1fr;
-}
-}
-
-/* =========================
-MODEL PROFILE
-========================= */
-
-.profile{
-background:#0c0c0c;
-}
-
-.profile-grid{
-display:grid;
-grid-template-columns:1fr 1.3fr;
-gap:50px;
-margin-top:45px;
-}
-
-.profile-card{
-border:1px solid #252525;
-background:#101010;
-padding:30px;
-}
-
-.profile-row{
-display:flex;
-justify-content:space-between;
-gap:20px;
-padding:15px 0;
-border-bottom:1px solid #222;
-font-size:.88rem;
-}
-
-.profile-row span:first-child{
-color:#666;
-text-transform:uppercase;
-font-size:.68rem;
-letter-spacing:.12em;
-}
-
-.profile-row span:last-child{
-font-weight:700;
-text-align:right;
-}
-
-.profile-message{
-display:flex;
-align-items:center;
-justify-content:center;
-min-height:100%;
-background:
-radial-gradient(circle at center,rgba(212,175,55,.1),transparent 40%),
-#101010;
-border:1px solid #252525;
-padding:50px;
-}
-
-.profile-message h3{
-font-family:var(--serif);
-font-size:clamp(2rem,5vw,4rem);
-line-height:1;
-}
-
-@media(max-width:750px){
-.profile-grid{
-grid-template-columns:1fr;
-}
-}
-
-/* =========================
-WHY BOOK
-========================= */
-
-.reasons{
-display:grid;
-grid-template-columns:repeat(5,1fr);
-gap:12px;
-margin-top:45px;
-}
-
-.reason{
-padding:28px 18px;
-border:1px solid #252525;
-background:#101010;
-}
-
-.reason-num{
-font-family:var(--serif);
-font-size:2.2rem;
-color:var(--gold);
-}
-
-.reason h3{
-font-size:.95rem;
-margin:15px 0 8px;
-}
-
-.reason p{
-font-size:.78rem;
-color:#777;
-}
-
-@media(max-width:900px){
-.reasons{
-grid-template-columns:1fr 1fr;
-}
-}
-
-@media(max-width:500px){
-.reasons{
-grid-template-columns:1fr;
-}
-}
-
-/* =========================
-SERVICES
-========================= */
-
-.services{
-background:#0b0b0b;
-}
-
-.service-grid{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:12px;
-margin-top:45px;
-}
-
-.service{
-padding:30px;
-border:1px solid #252525;
-background:#101010;
-}
-
-.service-number{
-color:var(--gold);
-font-size:.7rem;
-letter-spacing:.15em;
-font-weight:800;
-}
-
-.service h3{
-font-family:var(--serif);
-font-size:1.5rem;
-margin:15px 0 10px;
-}
-
-.service p{
-color:#777;
-font-size:.83rem;
-}
-
-@media(max-width:800px){
-.service-grid{
-grid-template-columns:1fr 1fr;
-}
-}
-
-@media(max-width:520px){
-.service-grid{
-grid-template-columns:1fr;
-}
-}
-
-/* =========================
-BOOKING PROCESS
-========================= */
-
-.process{
-border-top:1px solid #222;
-border-bottom:1px solid #222;
-}
-
-.process-grid{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:1px;
-background:#252525;
-margin-top:45px;
-}
-
-.process-step{
-background:#090909;
-padding:32px 22px;
-}
-
-.process-step span{
-font-family:var(--serif);
-font-size:2rem;
-color:var(--gold);
-}
-
-.process-step h3{
-font-size:.95rem;
-margin:12px 0 8px;
-}
-
-.process-step p{
-font-size:.78rem;
-color:#777;
-}
-
-@media(max-width:750px){
-.process-grid{
-grid-template-columns:1fr 1fr;
-}
-}
-
-/* =========================
-RATES
-========================= */
-
-.currency{
-display:flex;
-gap:5px;
-padding:5px;
-border:1px solid #333;
-border-radius:999px;
-width:max-content;
-margin:30px 0;
-}
-
-.currency button{
-border:0;
-background:transparent;
-color:#888;
-padding:9px 17px;
-border-radius:999px;
-cursor:pointer;
-font-weight:800;
-}
-
-.currency button.active{
-background:var(--gold);
-color:#000;
-}
-
-.rates{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:12px;
-}
-
-.rate{
-padding:28px 22px;
-background:#101010;
-border:1px solid #252525;
-}
-
-.rate h3{
-font-family:var(--serif);
-font-size:1.3rem;
-margin-bottom:13px;
-}
-
-.price{
-color:var(--gold);
-font-size:1.15rem;
-font-weight:800;
-}
-
-.rate small{
-display:block;
-color:#666;
-margin-top:10px;
-font-size:.72rem;
-}
-
-@media(max-width:700px){
-.rates{
-grid-template-columns:1fr;
-}
-}
-
-/* =========================
-PAYMENT
-========================= */
-
-.payment{
-background:
-radial-gradient(circle at 80% 20%,rgba(212,175,55,.12),transparent 30%),
-#090909;
-}
-
-.payment-intro{
-max-width:720px;
-color:#888;
-margin-bottom:40px;
-}
-
-.payment-grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:15px;
-}
-
-.payment-card{
-border:1px solid #292929;
-background:#101010;
-padding:32px;
-}
-
-.payment-card h3{
-font-family:var(--serif);
-font-size:1.8rem;
-margin-bottom:10px;
-}
-
-.payment-card p{
-color:#777;
-font-size:.85rem;
-}
-
-.bank-details{
-margin-top:25px;
-border-top:1px solid #292929;
-}
-
-.bank-row{
-display:flex;
-justify-content:space-between;
-gap:20px;
-padding:13px 0;
-border-bottom:1px solid #222;
-font-size:.8rem;
-}
-
-.bank-row span:first-child{
-color:#666;
-}
-
-.bank-row span:last-child{
-font-weight:700;
-text-align:right;
-word-break:break-word;
-}
-
-.copy-btn{
-margin-top:18px;
-width:100%;
-background:transparent;
-color:var(--gold);
-border:1px solid var(--gold);
-padding:12px;
-cursor:pointer;
-font-weight:800;
-font-size:.75rem;
-text-transform:uppercase;
-letter-spacing:.08em;
-}
-
-.copy-btn:hover{
-background:var(--gold);
-color:#000;
-}
-
-.security-note{
-margin-top:20px;
-font-size:.7rem!important;
-color:#666!important;
-}
-
-@media(max-width:750px){
-.payment-grid{
-grid-template-columns:1fr;
-}
-}
-
-/* =========================
-TERMS
-========================= */
-
-.terms-box{
-border-left:2px solid var(--gold);
-background:#111;
-padding:30px;
-max-width:850px;
-color:#999;
-}
-
-.terms-box p+p{
-margin-top:15px;
-}
-
-/* =========================
-FAQ
-========================= */
-
-.faq{
-background:#0c0c0c;
-}
-
-.faq-grid{
-max-width:850px;
-margin-top:40px;
-}
-
-details{
-border-bottom:1px solid #292929;
-padding:20px 0;
-}
-
-summary{
-cursor:pointer;
-font-weight:700;
-font-size:.95rem;
-}
-
-details p{
-color:#777;
-padding-top:13px;
-font-size:.83rem;
-max-width:700px;
-}
-
-/* =========================
-BOOKING
-========================= */
-
-.booking{
-background:
-radial-gradient(circle at 75% 20%,rgba(212,175,55,.14),transparent 32%),
-#050505;
-}
-
-.booking-grid{
-display:grid;
-grid-template-columns:.8fr 1.2fr;
-gap:60px;
-align-items:start;
-}
-
-.booking-title{
-font-family:var(--serif);
-font-size:clamp(3rem,7vw,6rem);
-line-height:.9;
-margin-bottom:25px;
-}
-
-.booking-copy{
-color:#888;
-margin-bottom:25px;
-}
-
-.contact{
-display:grid;
-gap:12px;
-font-size:.86rem;
-}
-
-.contact strong{
-color:var(--gold);
-}
-
-form{
-display:grid;
-gap:13px;
-}
-
-.form-row{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:13px;
-}
-
-input,
-select,
-textarea{
-width:100%;
-background:#111;
-color:white;
-border:1px solid #292929;
-padding:15px;
-border-radius:2px;
-outline:none;
-}
-
-input:focus,
-select:focus,
-textarea:focus{
-border-color:var(--gold);
-}
-
-textarea{
-min-height:160px;
-resize:vertical;
-}
-
-@media(max-width:800px){
-.booking-grid{
-grid-template-columns:1fr;
-}
-
-.form-row{
-grid-template-columns:1fr;
-}
-}
-
-/* =========================
-FOOTER
-========================= */
-
-footer{
-border-top:1px solid #222;
-padding:55px 0 100px;
-background:#030303;
-}
-
-.footer{
-display:flex;
-justify-content:space-between;
-gap:30px;
-flex-wrap:wrap;
-}
-
-.footer-brand{
-font-family:var(--serif);
-font-size:1.6rem;
-}
-
-.footer-location{
-font-size:.75rem;
-color:#666;
-margin-top:8px;
-}
-
-.socials{
-display:flex;
-gap:8px;
-flex-wrap:wrap;
-}
-
-.social{
-border:1px solid #292929;
-padding:9px 13px;
-font-size:.72rem;
-color:#aaa;
-}
-
-.social:hover{
-border-color:var(--gold);
-color:var(--gold);
-}
-
-.copyright{
-color:#444;
-font-size:.7rem;
-margin-top:35px;
-}
-
-/* =========================
-ANIMATION
-========================= */
-
-.reveal{
-opacity:0;
-transform:translateY(25px);
-transition:.8s ease;
-}
-
-.reveal.visible{
-opacity:1;
-transform:none;
-}
-
-@media(prefers-reduced-motion:reduce){
-.reveal{
-opacity:1;
-transform:none;
-transition:none;
-}
-}
-
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>King Lyon | Nigerian Runway & Editorial Model</title>
+
+  <meta name="description" content="King Lyon is a Nigerian runway, fashion and editorial model based in Uyo, Akwa Ibom. Available for fashion campaigns, editorials, runway shows and brand collaborations.">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #090909;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      width: 100%;
+      display: block;
+    }
+
+    /* NAVIGATION */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      background: rgba(9, 9, 9, 0.94);
+      border-bottom: 1px solid rgba(212, 175, 55, 0.25);
+      backdrop-filter: blur(10px);
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 18px 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: 900;
+      letter-spacing: 3px;
+      color: #d4af37;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 25px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .nav-links a:hover {
+      color: #d4af37;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 100vh;
+      padding: 140px 25px 70px;
+      display: flex;
+      align-items: center;
+      background:
+        linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.85)),
+        radial-gradient(circle at center, #292929 0%, #090909 65%);
+    }
+
+    .hero-container {
+      max-width: 1200px;
+      width: 100%;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .hero-text span {
+      color: #d4af37;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    .hero h1 {
+      font-size: clamp(55px, 8vw, 105px);
+      line-height: .9;
+      margin: 20px 0;
+      text-transform: uppercase;
+      letter-spacing: -4px;
+    }
+
+    .hero h1 strong {
+      color: #d4af37;
+    }
+
+    .hero p {
+      max-width: 560px;
+      color: #ccc;
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 14px 25px;
+      border: 1px solid #d4af37;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 12px;
+      font-weight: bold;
+      transition: .3s;
+    }
+
+    .btn-gold {
+      background: #d4af37;
+      color: #080808;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      background: #fff;
+      border-color: #fff;
+      color: #000;
+    }
+
+    .hero-image {
+      min-height: 600px;
+      border: 1px solid rgba(212,175,55,.4);
+      background: linear-gradient(145deg, #222, #0d0d0d);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .hero-image img {
+      height: 100%;
+      min-height: 600px;
+      object-fit: cover;
+    }
+
+    .image-placeholder {
+      padding: 30px;
+      text-align: center;
+      color: #aaa;
+    }
+
+    .image-placeholder span {
+      display: block;
+      color: #d4af37;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    /* GENERAL */
+    section {
+      padding: 100px 25px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section-title {
+      margin-bottom: 50px;
+    }
+
+    .section-title small {
+      color: #d4af37;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      font-size: 11px;
+    }
+
+    .section-title h2 {
+      font-size: clamp(38px, 6vw, 65px);
+      text-transform: uppercase;
+      line-height: 1;
+      margin-top: 10px;
+    }
+
+    /* ABOUT */
+    .about {
+      background: #111;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .about-photo {
+      min-height: 550px;
+      background: #1b1b1b;
+      border: 1px solid #333;
+      overflow: hidden;
+    }
+
+    .about-photo img {
+      height: 550px;
+      object-fit: cover;
+    }
+
+    .about-text p {
+      color: #bbb;
+      font-size: 17px;
+      margin-bottom: 20px;
+    }
+
+    .about-list {
+      margin-top: 25px;
+      list-style: none;
+    }
+
+    .about-list li {
+      padding: 12px 0;
+      border-bottom: 1px solid #333;
+      color: #ddd;
+    }
+
+    .about-list strong {
+      color: #d4af37;
+    }
+
+    /* PORTFOLIO */
+    .portfolio {
+      background: #090909;
+    }
+
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+    }
+
+    .portfolio-item {
+      position: relative;
+      height: 430px;
+      background: #181818;
+      overflow: hidden;
+      border: 1px solid #292929;
+    }
+
+    .portfolio-item img {
+      height: 100%;
+      object-fit: cover;
+      transition: transform .5s;
+    }
+
+    .portfolio-item:hover img {
+      transform: scale(1.06);
+    }
+
+    .portfolio-label {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 25px 20px;
+      background: linear-gradient(transparent, rgba(0,0,0,.95));
+    }
+
+    .portfolio-label h3 {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    /* SERVICES */
+    .services {
+      background: #111;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+    }
+
+    .service {
+      border: 1px solid #333;
+      padding: 35px 25px;
+      min-height: 220px;
+      transition: .3s;
+    }
+
+    .service:hover {
+      border-color: #d4af37;
+      transform: translateY(-5px);
+    }
+
+    .service-number {
+      color: #d4af37;
+      font-size: 13px;
+    }
+
+    .service h3 {
+      margin: 25px 0 12px;
+      text-transform: uppercase;
+      font-size: 18px;
+    }
+
+    .service p {
+      color: #999;
+      font-size: 14px;
+    }
+
+    /* CTA */
+    .cta {
+      text-align: center;
+      background:
+        linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.9)),
+        #171717;
+    }
+
+    .cta h2 {
+      font-size: clamp(45px, 8vw, 85px);
+      line-height: .95;
+      text-transform: uppercase;
+      margin-bottom: 25px;
+    }
+
+    .cta p {
+      color: #bbb;
+      max-width: 600px;
+      margin: auto auto 30px;
+    }
+
+    /* CONTACT */
+    .contact {
+      background: #090909;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+    }
+
+    .contact-info p {
+      color: #aaa;
+      margin-bottom: 15px;
+    }
+
+    .contact-info strong {
+      color: #d4af37;
+    }
+
+    .contact-links {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .contact-link {
+      border: 1px solid #333;
+      padding: 18px;
+      transition: .3s;
+    }
+
+    .contact-link:hover {
+      border-color: #d4af37;
+      color: #d4af37;
+    }
+
+    /* FOOTER */
+    footer {
+      border-top: 1px solid #292929;
+      padding: 30px 25px;
+      text-align: center;
+      color: #777;
+      font-size: 12px;
+    }
+
+    footer strong {
+      color: #d4af37;
+    }
+
+    /* MOBILE */
+    @media (max-width: 850px) {
+
+      .nav-container {
+        padding: 15px;
+      }
+
+      .nav-links {
+        gap: 12px;
+      }
+
+      .nav-links a {
+        font-size: 9px;
+      }
+
+      .hero-container,
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding-top: 120px;
+      }
+
+      .hero-image {
+        min-height: 500px;
+      }
+
+      .hero-image img {
+        min-height: 500px;
+      }
+
+      .portfolio-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .service-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 520px) {
+
+      .logo {
+        font-size: 16px;
+      }
+
+      .nav-links {
+        gap: 8px;
+      }
+
+      .nav-links a {
+        font-size: 8px;
+      }
+
+      section {
+        padding: 70px 18px;
+      }
+
+      .hero {
+        padding-left: 18px;
+        padding-right: 18px;
+      }
+
+      .hero h1 {
+        font-size: 58px;
+      }
+
+      .hero p {
+        font-size: 15px;
+      }
+
+      .portfolio-grid,
+      .service-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .portfolio-item {
+        height: 500px;
+      }
+
+      .about-photo {
+        min-height: 450px;
+      }
+
+      .about-photo img {
+        height: 450px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<!-- FLOATING BOOK BUTTON -->
-<a href="#book" class="float-book">BOOK KING LYON</a>
-
-<!-- NAVIGATION -->
-<nav>
-<div class="container nav-inner">
-
-<a href="#top" class="logo">
-KING <span class="gold">LYON</span>
-</a>
-
-<div class="nav-links">
-<a href="#work">Work</a>
-<a href="#services">Services</a>
-<a href="#rates">Rates</a>
-<a href="#payment">Payment</a>
-<a href="#book" class="nav-book">Book Now</a>
-</div>
-
-</div>
-</nav>
-
-
-<main id="top">
-
-<!-- HERO -->
-<section class="hero">
-
-<div class="hero-image"></div>
-<div class="hero-overlay"></div>
-
-<div class="container hero-content reveal">
-
-<div class="kicker">
-Nigerian Model · Runway · Editorial · Fashion
-</div>
-
-<h1>
-KING LYON.<br>
-<span>Own</span> the Frame.
-</h1>
-
-<p class="hero-sub">
-A fashion-forward Nigerian model bringing presence, movement,
-versatility and personality to runway shows, editorial productions,
-brand campaigns and short-form content.
-</p>
-
-<div class="hero-buttons">
-
-<a href="#book" class="btn btn-gold">
-Book King Lyon
-</a>
-
-<a href="#work" class="btn btn-outline">
-Explore Portfolio
-</a>
-
-</div>
-
-</div>
-</section>
-
-
-<!-- TRUST BAR -->
-<section class="trust">
-
-<div class="container trust-grid">
-
-<div class="trust-item">
-<strong>RUNWAY</strong>
-<span>Fashion Shows</span>
-</div>
-
-<div class="trust-item">
-<strong>EDITORIAL</strong>
-<span>Magazine & Creative</span>
-</div>
-
-<div class="trust-item">
-<strong>CAMPAIGNS</strong>
-<span>Fashion & Brands</span>
-</div>
-
-<div class="trust-item">
-<strong>WORLDWIDE</strong>
-<span>Available to Travel</span>
-</div>
-
-</div>
-</section>
-
-
-<!-- INTRO -->
-<section class="section intro-section">
-
-<div class="container">
-
-<div class="label reveal">
-The Model
-</div>
-
-<div class="intro-grid">
-
-<div class="statement reveal">
-Not just a face.<br>
-A <span class="gold">presence.</span>
-</div>
-
-<div class="copy reveal">
-
-<p>
-King Lyon is a Nigerian male model available for fashion,
-runway, editorial, commercial and digital productions.
-</p>
-
-<p>
-His goal on set is simple: understand the creative direction,
-bring confidence to the frame and help the final production
-look exactly as the brand imagined it.
-</p>
-
-<p>
-Based in Uyo, Akwa Ibom State, Nigeria, with availability
-across Nigeria and internationally.
-</p>
-
-</div>
-
-</div>
-</div>
-</section>
-
-
-<!-- WHO HE WORKS WITH -->
-<section class="section" id="clients">
-
-<div class="container">
-
-<div class="label reveal">
-Built For
-</div>
-
-<h2 class="title reveal">
-Who Is This For?
-</h2>
-
-<p class="intro reveal">
-Whether you are launching a collection, producing an editorial,
-creating content or building a campaign, King Lyon can be booked
-for projects that need a strong male fashion presence.
-</p>
-
-<div class="client-grid">
-
-<div class="client-card reveal">
-<div class="client-number">01</div>
-<h3>Designers</h3>
-<p>
-Fashion designers looking for a confident model to present
-collections and new pieces.
-</p>
-</div>
-
-<div class="client-card reveal">
-<div class="client-number">02</div>
-<h3>Brands</h3>
-<p>
-Fashion, beauty, lifestyle and commercial brands creating
-campaigns and promotional content.
-</p>
-</div>
-
-<div class="client-card reveal">
-<div class="client-number">03</div>
-<h3>Photographers</h3>
-<p>
-Creative photographers producing editorial, portfolio and
-conceptual fashion shoots.
-</p>
-</div>
-
-<div class="client-card reveal">
-<div class="client-number">04</div>
-<h3>Agencies</h3>
-<p>
-Production companies, agencies and casting teams looking
-for male talent for projects.
-</p>
-</div>
-
-</div>
-</div>
-</section>
-
-
-<!-- PORTFOLIO -->
-<section class="section portfolio" id="work">
-
-<div class="container">
-
-<div class="label reveal">
-Selected Work
-</div>
-
-<h2 class="title reveal">
-The Portfolio.
-</h2>
-
-<p class="intro reveal">
-A portfolio built around movement, fashion, attitude and
-strong visual presence.
-</p>
-
-<div class="tabs reveal">
-
-<button class="tab active" data-category="runway">
-Runway
-</button>
-
-<button class="tab" data-category="editorial">
-Editorial
-</button>
-
-<button class="tab" data-category="fashion">
-Fashion
-</button>
-
-</div>
-
-<div class="gallery">
-
-<div class="gallery-card" data-category="runway">
-<div class="gallery-label">Runway</div>
-</div>
-
-<div class="gallery-card" data-category="editorial">
-<div class="gallery-label">Editorial</div>
-</div>
-
-<div class="gallery-card" data-category="fashion">
-<div class="gallery-label">Fashion</div>
-</div>
-
-<div class="gallery-card" data-category="runway">
-<div class="gallery-label">Runway</div>
-</div>
-
-<div class="gallery-card" data-category="editorial">
-<div class="gallery-label">Editorial</div>
-</div>
-
-<div class="gallery-card" data-category="fashion">
-<div class="gallery-label">Fashion</div>
-</div>
-
-</div>
-
-<p style="color:#555;font-size:.72rem;margin-top:20px;">
-Portfolio images can be replaced with official campaign,
-runway and editorial photographs.
-</p>
-
-</div>
-</section>
-
-
-<!-- MOTION -->
-<section class="section">
-
-<div class="container">
-
-<div class="label reveal">
-In Motion
-</div>
-
-<h2 class="title reveal">
-See The Energy.
-</h2>
-
-<p class="intro reveal">
-Modeling is more than standing in front of a camera.
-Movement, expression and personality can change the entire
-campaign.
-</p>
-
-<div class="video-grid">
-
-<div class="video reveal">
-<div>
-<div class="play">▶</div>
-<p style="color:#666;margin-top:15px;font-size:.7rem;">
-RUNWAY / VIDEO
-</p>
-</div>
-</div>
-
-<div class="video reveal">
-<div>
-<div class="play">▶</div>
-<p style="color:#666;margin-top:15px;font-size:.7rem;">
-SHORT-FORM CONTENT
-</p>
-</div>
-</div>
-
-</div>
-
-<div style="margin-top:25px;">
-
-<a
-href="https://www.tiktok.com/@kinglyon35"
-target="_blank"
-rel="noopener"
-class="btn btn-outline">
-Watch TikTok
-</a>
-
-</div>
-
-</div>
-</section>
-
-
-<!-- MODEL PROFILE -->
-<section class="section profile">
-
-<div class="container">
-
-<div class="label reveal">
-Model Profile
-</div>
-
-<h2 class="title reveal">
-The Details.
-</h2>
-
-<p class="intro reveal">
-Professional information can be provided to casting teams,
-designers and agencies upon request.
-</p>
-
-<div class="profile-grid">
-
-<div class="profile-card reveal">
-
-<div class="profile-row">
-<span>Location</span>
-<span>Uyo, Akwa Ibom, Nigeria</span>
-</div>
-
-<div class="profile-row">
-<span>Availability</span>
-<span>Nigeria & International</span>
-</div>
-
-<div class="profile-row">
-<span>Specialty</span>
-<span>Runway / Editorial / Fashion</span>
-</div>
-
-<div class="profile-row">
-<span>Commercial</span>
-<span>Brand Campaigns</span>
-</div>
-
-<div class="profile-row">
-<span>Content</span>
-<span>Short-Form Video</span>
-</div>
-
-<div class="profile-row">
-<span>Booking</span>
-<span>Advance Payment Required</span>
-</div>
-
-</div>
-
-<div class="profile-message reveal">
-
-<div>
-
-<div class="label">
-Casting & Agencies
-</div>
-
-<h3>
-Need a model<br>
-for your next<br>
-<span class="gold">production?</span>
-</h3>
-
-<br>
-
-<a href="#book" class="btn btn-gold">
-Send Casting Request
-</a>
-
-</div>
-
-</div>
-
-</div>
-</div>
-</section>
-
-
-<!-- WHY BOOK -->
-<section class="section">
-
-<div class="container">
-
-<div class="label reveal">
-Why Book King Lyon
-</div>
-
-<h2 class="title reveal">
-Presence That<br>
-Works On Camera.
-</h2>
-
-<div class="reasons">
-
-<div class="reason reveal">
-<div class="reason-num">01</div>
-<h3>Camera Ready</h3>
-<p>
-A strong visual presence designed to translate through the lens.
-</p>
-</div>
-
-<div class="reason reveal">
-<div class="reason-num">02</div>
-<h3>Versatile</h3>
-<p>
-Suitable for runway, editorial, fashion and promotional content.
-</p>
-</div>
-
-<div class="reason reveal">
-<div class="reason-num">03</div>
-<h3>Professional</h3>
-<p>
-Clear communication, punctuality and respect for production schedules.
-</p>
-</div>
-
-<div class="reason reveal">
-<div class="reason-num">04</div>
-<h3>Creative</h3>
-<p>
-Able to work with photographers, directors and creative teams.
-</p>
-</div>
-
-<div class="reason reveal">
-<div class="reason-num">05</div>
-<h3>Available To Travel</h3>
-<p>
-Bookings can be considered across Nigeria and internationally.
-</p>
-</div>
-
-</div>
-
-</div>
-</section>
-
-
-<!-- SERVICES -->
-<section class="section services" id="services">
-
-<div class="container">
-
-<div class="label reveal">
-Services
-</div>
-
-<h2 class="title reveal">
-Put Him In The Frame.
-</h2>
-
-<div class="service-grid">
-
-<div class="service reveal">
-<div class="service-number">01 — RUNWAY</div>
-<h3>Runway Modeling</h3>
-<p>
-Fashion shows, collection launches, designer showcases,
-events and runway productions.
-</p>
-</div>
-
-<div class="service reveal">
-<div class="service-number">02 — EDITORIAL</div>
-<h3>Editorial Shoots</h3>
-<p>
-Magazine-style shoots, creative concepts, lookbooks and
-fashion editorials.
-</p>
-</div>
-
-<div class="service reveal">
-<div class="service-number">03 — CAMPAIGN</div>
-<h3>Brand Campaigns</h3>
-<p>
-Fashion, lifestyle and commercial campaigns designed
-to showcase your product.
-</p>
-</div>
-
-<div class="service reveal">
-<div class="service-number">04 — CONTENT</div>
-<h3>Short-Form Content</h3>
-<p>
-TikTok, Reels and promotional videos created around your
-brand's visual direction.
-</p>
-</div>
-
-<div class="service reveal">
-<div class="service-number">05 — COLLABORATION</div>
-<h3>Brand Collaborations</h3>
-<p>
-Creative collaborations, launches, events, appearances
-and promotional activations.
-</p>
-</div>
-
-<div class="service reveal">
-<div class="service-number">06 — CASTING</div>
-<h3>Agency & Casting</h3>
-<p>
-Available for casting opportunities, production work and
-agency-led projects.
-</p>
-</div>
-
-</div>
-
-<div style="margin-top:30px;">
-<a href="#book" class="btn btn-gold">
-Request A Quote
-</a>
-</div>
-
-</div>
-</section>
-
-
-<!-- BOOKING PROCESS -->
-<section class="section process">
-
-<div class="container">
-
-<div class="label reveal">
-Simple Booking
-</div>
-
-<h2 class="title reveal">
-From Brief To<br>
-<span class="gold">Production.</span>
-</h2>
-
-<div class="process-grid">
-
-<div class="process-step reveal">
-<span>01</span>
-<h3>Send Your Brief</h3>
-<p>
-Tell us the project, date, location, usage and requirements.
-</p>
-</div>
-
-<div class="process-step reveal">
-<span>02</span>
-<h3>Confirm Availability</h3>
-<p>
-We review the project and confirm availability and pricing.
-</p>
-</div>
-
-<div class="process-step reveal">
-<span>03</span>
-<h3>Secure The Date</h3>
-<p>
-Payment is required before the booking date is officially secured.
-</p>
-</div>
-
-<div class="process-step reveal">
-<span>04</span>
-<h3>Show Up & Create</h3>
-<p>
-King Lyon arrives ready for the production and creative direction.
-</p>
-</div>
-
-</div>
-
-</div>
-</section>
-
-
-<!-- RATES -->
-<section class="section" id="rates">
-
-<div class="container">
-
-<div class="label reveal">
-Investment
-</div>
-
-<h2 class="title reveal">
-Starting Rates.
-</h2>
-
-<p class="intro reveal">
-Rates vary according to project scope, duration, location,
-usage rights, exclusivity and production requirements.
-</p>
-
-<div class="currency reveal">
-
-<button class="currency-btn active" data-currency="ngn">
-₦ NGN
-</button>
-
-<button class="currency-btn" data-currency="usd">
-$ USD
-</button>
-
-</div>
-
-<div class="rates currency-panel" id="ngn-rates">
-
-<div class="rate">
-<h3>Runway Show</h3>
-<div class="price">₦30,000 – ₦100,000</div>
-<small>Per booking</small>
-</div>
-
-<div class="rate">
-<h3>Editorial / Half Day</h3>
-<div class="price">₦50,000 – ₦150,000</div>
-<small>Project dependent</small>
-</div>
-
-<div class="rate">
-<h3>Full Day</h3>
-<div class="price">₦100,000 – ₦300,000</div>
-<small>Production dependent</small>
-</div>
-
-<div class="rate">
-<h3>Brand Campaign</h3>
-<div class="price">₦1,000,000 – ₦2,000,000</div>
-<small>Usage rights may affect final quote</small>
-</div>
-
-<div class="rate">
-<h3>Short-Form Content</h3>
-<div class="price">₦30,000 – ₦100,000</div>
-<small>Small brand starting range</small>
-</div>
-
-<div class="rate">
-<h3>Large Brand Content</h3>
-<div class="price">From ₦500,000</div>
-<small>Quoted according to campaign scope</small>
-</div>
-
-</div>
-
-
-<div class="rates currency-panel" id="usd-rates" style="display:none;">
-
-<div class="rate">
-<h3>Runway Show</h3>
-<div class="price">$150 – $400</div>
-<small>Per booking</small>
-</div>
-
-<div class="rate">
-<h3>Editorial / Half Day</h3>
-<div class="price">$250 – $750</div>
-<small>Project dependent</small>
-</div>
-
-<div class="rate">
-<h3>Full Day</h3>
-<div class="price">$500 – $1,500</div>
-<small>Production dependent</small>
-</div>
-
-<div class="rate">
-<h3>Brand Campaign</h3>
-<div class="price">$1,500 – $3,500</div>
-<small>Usage rights may affect final quote</small>
-</div>
-
-<div class="rate">
-<h3>Short-Form Content</h3>
-<div class="price">$100 – $300</div>
-<small>Small brand starting range</small>
-</div>
-
-<div class="rate">
-<h3>Large Brand Content</h3>
-<div class="price">From $1,000</div>
-<small>Quoted according to campaign scope</small>
-</div>
-
-</div>
-
-<p style="color:#666;font-size:.72rem;margin-top:25px;">
-Final quotation is confirmed after reviewing the project brief,
-location, duration, usage rights and production requirements.
-</p>
-
-</div>
-</section>
-
-
-<!-- PAYMENT -->
-<section class="section payment" id="payment">
-
-<div class="container">
-
-<div class="label reveal">
-International Payments
-</div>
-
-<h2 class="title reveal">
-Pay From<br>
-<span class="gold">Anywhere.</span>
-</h2>
-
-<p class="payment-intro reveal">
-International clients can use the USD banking information below
-for eligible USD payments. After payment, send your proof of payment
-with your booking reference through WhatsApp or email.
-</p>
-
-
-<div class="payment-grid">
-
-<!-- NIGERIA -->
-<div class="payment-card reveal">
-
-<div class="label">
-Nigeria
-</div>
-
-<h3>Pay in Naira</h3>
-
-<p>
-Nigerian clients can use the available Paystack payment option
-or request direct payment instructions.
-</p>
-
-<br>
-
-<a
-href="https://paystack.shop/pay/kinglyon"
-target="_blank"
-rel="noopener"
-class="btn btn-gold"
->
-Pay via Paystack
-</a>
-
-</div>
-
-
-<!-- USD -->
-<div class="payment-card reveal">
-
-<div class="label">
-United States Dollar
-</div>
-
-<h3>USD Account</h3>
-
-<p>
-For USD payments, use the account information below.
-</p>
-
-<div class="bank-details">
-
-<div class="bank-row">
-<span>Account Number</span>
-<span id="accountNumber">
-215317513414
-</span>
-</div>
-
-<div class="bank-row">
-<span>Bank Name</span>
-<span>Lead Bank</span>
-</div>
-
-<div class="bank-row">
-<span>ACH Routing</span>
-<span id="achRouting">
-101019644
-</span>
-</div>
-
-<div class="bank-row">
-<span>Wire Routing</span>
-<span id="wireRouting">
-101019644
-</span>
-</div>
-
-<div class="bank-row">
-<span>Account Type</span>
-<span>Checking</span>
-</div>
-
-<div class="bank-row">
-<span>Bank Address</span>
-<span>
-1801 Main St., Kansas City, MO 64108
-</span>
-</div>
-
-</div>
-
-<button
-class="copy-btn"
-onclick="copyBankDetails()">
-Copy USD Payment Details
-</button>
-
-<p class="security-note">
-For your security, verify the payment instructions and recipient
-details before sending funds. Do not send payment to a changed
-account number without independently confirming it.
-</p>
-
-</div>
-
-</div>
-
-</div>
-</section>
-
-
-<!-- TERMS -->
-<section class="section">
-
-<div class="container">
-
-<div class="label reveal">
-Booking Terms
-</div>
-
-<h2 class="title reveal">
-Secure The Date.
-</h2>
-
-<div class="terms-box reveal">
-
-<p>
-A booking is confirmed only after the agreed payment or deposit
-has been received.
-</p>
-
-<p>
-For bookings outside Uyo, Nigeria, transportation costs may be
-covered by the client depending on the agreed project terms.
-</p>
-
-<p>
-For international bookings, the client is responsible for agreed
-travel-related expenses such as flights, visa costs, accommodation
-and local transportation unless otherwise agreed in writing.
-</p>
-
-<p>
-Commercial usage, exclusivity, paid advertising and extended
-content usage may require an additional fee.
-</p>
-
-<p>
-Project-specific terms will be confirmed before payment.
-</p>
-
-</div>
-
-</div>
-</section>
-
-
-<!-- FAQ -->
-<section class="section faq">
-
-<div class="container">
-
-<div class="label reveal">
-Questions
-</div>
-
-<h2 class="title reveal">
-Before You Book.
-</h2>
-
-<div class="faq-grid reveal">
-
-<details>
-<summary>Where is King Lyon based?</summary>
-<p>
-King Lyon is based in Uyo, Akwa Ibom State, Nigeria.
-Bookings can be considered across Nigeria and internationally.
-</p>
-</details>
-
-<details>
-<summary>Can international brands book him?</summary>
-<p>
-Yes. International projects can be discussed based on the project
-brief, schedule, travel requirements and agreed commercial terms.
-</p>
-</details>
-
-<details>
-<summary>How far in advance should I book?</summary>
-<p>
-As early as possible is recommended, especially for campaigns,
-fashion shows, travel bookings and productions with fixed dates.
-</p>
-</details>
-
-<details>
-<summary>Do you offer custom rates?</summary>
-<p>
-Yes. The displayed rates are starting ranges. Final pricing depends
-on project duration, location, usage rights, exclusivity and scope.
-</p>
-</details>
-
-<details>
-<summary>Can I request a casting or model profile?</summary>
-<p>
-Yes. Send the casting requirements through the booking form,
-WhatsApp or email.
-</p>
-</details>
-
-<details>
-<summary>How is an international booking paid?</summary>
-<p>
-USD payment instructions are provided on this website. Clients
-should verify the payment details before sending funds and provide
-proof of payment after completing the transaction.
-</p>
-</details>
-
-</div>
-
-</div>
-</section>
-
-
-<!-- BOOK -->
-<section class="section booking" id="book">
-
-<div class="container">
-
-<div class="booking-grid">
-
-<div class="reveal">
-
-<div class="label">
-Booking
-</div>
-
-<h2 class="booking-title">
-Your campaign.<br>
-His <span class="gold">presence.</span>
-</h2>
-
-<p class="booking-copy">
-Have a runway show, editorial shoot, fashion campaign,
-brand activation or content project?
-Send the brief and let's discuss the booking.
-</p>
-
-<div class="contact">
-
-<div>
-<strong>WhatsApp:</strong>
-<a href="https://wa.me/2348107382024">
-081 0738 2024
-</a>
-</div>
-
-<div>
-<strong>Email:</strong>
-<a href="mailto:godswillekpe74@gmail.com">
-godswillekpe74@gmail.com
-</a>
-</div>
-
-<div>
-<strong>Location:</strong>
-Uyo, Akwa Ibom State, Nigeria
-</div>
-
-<div>
-<strong>Availability:</strong>
-Nigeria & International
-</div>
-
-</div>
-
-</div>
-
-
-<div class="reveal">
-
-<form
-action="mailto:godswillekpe74@gmail.com"
-method="post"
-enctype="text/plain"
->
-
-<div class="form-row">
-
-<input
-type="text"
-name="name"
-placeholder="Your Name *"
-required
->
-
-<input
-type="text"
-name="company"
-placeholder="Company / Brand"
->
-
-</div>
-
-<div class="form-row">
-
-<input
-type="email"
-name="email"
-placeholder="Your Email *"
-required
->
-
-<input
-type="tel"
-name="phone"
-placeholder="Phone / WhatsApp"
->
-
-</div>
-
-<div class="form-row">
-
-<input
-type="text"
-name="country"
-placeholder="Country"
->
-
-<select name="project" required>
-
-<option value="">
-Project Type *
-</option>
-
-<option>Runway Modeling</option>
-<option>Editorial Shoot</option>
-<option>Fashion Campaign</option>
-<option>Brand Campaign</option>
-<option>Short-Form Content</option>
-<option>Brand Collaboration</option>
-<option>Event / Appearance</option>
-<option>Casting</option>
-<option>Other</option>
-
-</select>
-
-</div>
-
-<div class="form-row">
-
-<input
-type="date"
-name="date"
-required
->
-
-<input
-type="text"
-name="location"
-placeholder="Project Location"
->
-
-</div>
-
-<input
-type="text"
-name="budget"
-placeholder="Estimated Budget"
->
-
-<textarea
-name="message"
-placeholder="Tell us about the project, date, location, usage rights, duration and any important requirements..."
-required
-></textarea>
-
-<button
-type="submit"
-class="btn btn-gold"
->
-Send Booking Inquiry
-</button>
-
-</form>
-
-
-<br>
-
-<a
-href="https://wa.me/2348107382024?text=Hello%20King%20Lyon,%20I%20would%20like%20to%20book%20you.%20Here%20are%20my%20project%20details:"
-target="_blank"
-rel="noopener"
-class="btn btn-outline"
-style="width:100%;"
->
-Book Directly On WhatsApp
-</a>
-
-</div>
-
-</div>
-</div>
-</section>
-
-</main>
-
-
-<!-- FOOTER -->
-<footer>
-
-<div class="container">
-
-<div class="footer">
-
-<div>
-
-<div class="footer-brand">
-KING <span class="gold">LYON</span>
-</div>
-
-<div class="footer-location">
-Runway · Editorial · Fashion · Content
-</div>
-
-<div class="footer-location">
-Uyo, Akwa Ibom State, Nigeria
-</div>
-
-</div>
-
-
-<div class="socials">
-
-<a
-class="social"
-href="https://www.tiktok.com/@kinglyon35"
-target="_blank"
-rel="noopener">
-TikTok
-</a>
-
-<a
-class="social"
-href="https://www.youtube.com/@kinglyon-e9v"
-target="_blank"
-rel="noopener">
-YouTube
-</a>
-
-<a
-class="social"
-href="https://x.com/godswillekpe"
-target="_blank"
-rel="noopener">
-X
-</a>
-
-<a
-class="social"
-href="mailto:godswillekpe74@gmail.com">
-Email
-</a>
-
-</div>
-
-</div>
-
-<div class="copyright">
-© <span id="year"></span> King Lyon. All rights reserved.
-</div>
-
-</div>
-
-</footer>
-
-
-<script>
-
-/* YEAR */
-
-document.getElementById("year").textContent =
-new Date().getFullYear();
-
-
-/* REVEAL */
-
-const reveals =
-document.querySelectorAll(".reveal");
-
-const observer =
-new IntersectionObserver(
-entries => {
-
-entries.forEach(entry => {
-
-if(entry.isIntersecting){
-
-entry.target.classList.add("visible");
-
-observer.unobserve(entry.target);
-
-}
-
-});
-
-},
-{
-threshold:.1
-}
-);
-
-reveals.forEach(el =>
-observer.observe(el)
-);
-
-
-/* PORTFOLIO */
-
-const tabs =
-document.querySelectorAll(".tab");
-
-const cards =
-document.querySelectorAll(".gallery-card");
-
-tabs.forEach(tab => {
-
-tab.addEventListener("click",()=>{
-
-tabs.forEach(t =>
-t.classList.remove("active")
-);
-
-tab.classList.add("active");
-
-const category =
-tab.dataset.category;
-
-cards.forEach(card => {
-
-card.style.display =
-card.dataset.category === category
-? "block"
-: "none";
-
-});
-
-});
-
-});
-
-
-/* CURRENCY */
-
-const currencyButtons =
-document.querySelectorAll(".currency-btn");
-
-const ngn =
-document.getElementById("ngn-rates");
-
-const usd =
-document.getElementById("usd-rates");
-
-currencyButtons.forEach(btn => {
-
-btn.addEventListener("click",()=>{
-
-currencyButtons.forEach(b =>
-b.classList.remove("active")
-);
-
-btn.classList.add("active");
-
-if(btn.dataset.currency === "ngn"){
-
-ngn.style.display="grid";
-usd.style.display="none";
-
-}else{
-
-ngn.style.display="none";
-usd.style.display="grid";
-
-}
-
-});
-
-});
-
-
-/* COPY BANK DETAILS */
-
-function copyBankDetails(){
-
-const details =
-`USD PAYMENT DETAILS
-
-Account Number: 215317513414
-Bank Name: Lead Bank
-ACH Routing: 101019644
-Wire Routing: 101019644
-Account Type: Checking
-Bank Address: 1801 Main St., Kansas City, MO 64108`;
-
-navigator.clipboard.writeText(details)
-.then(()=>{
-
-const btn =
-document.querySelector(".copy-btn");
-
-const old =
-btn.textContent;
-
-btn.textContent =
-"Copied Successfully ✓";
-
-setTimeout(()=>{
-btn.textContent=old;
-},2500);
-
-})
-.catch(()=>{
-
-alert(
-"Please manually copy the payment details from the page."
-);
-
-});
-
-}
-
-
-/* SMOOTH LINKS */
-
-document
-.querySelectorAll('a[href^="#"]')
-.forEach(link=>{
-
-link.addEventListener("click",function(e){
-
-const target =
-document.querySelector(
-this.getAttribute("href")
-);
-
-if(target){
-
-e.preventDefault();
-
-target.scrollIntoView({
-behavior:"smooth",
-block:"start"
-});
-
-}
-
-});
-
-});
-
-</script>
+  <!-- NAVIGATION -->
+  <nav>
+    <div class="nav-container">
+      <a href="#home" class="logo">KING LYON</a>
+
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Book</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-container">
+
+      <div class="hero-text">
+        <span>Nigerian Model • Uyo</span>
+
+        <h1>
+          King<br>
+          <strong>Lyon</strong>
+        </h1>
+
+        <p>
+          Runway. Fashion. Editorial. Visual storytelling.
+          A modern Nigerian model creating striking images
+          for brands, designers, photographers and creative teams.
+        </p>
+
+        <div class="buttons">
+          <a href="#portfolio" class="btn btn-gold">View Portfolio</a>
+          <a href="#contact" class="btn">Book King Lyon</a>
+        </div>
+      </div>
+
+
+      <!-- HERO PHOTO
+           LATER: Replace this placeholder with your image -->
+      <div class="hero-image">
+        <div class="image-placeholder">
+          <span>HERO PHOTO</span>
+          Add King Lyon's main professional photo here.
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container">
+
+      <div class="section-title">
+        <small>01 / About</small>
+        <h2>The Model</h2>
+      </div>
+
+      <div class="about-grid">
+
+        <!-- ABOUT PHOTO -->
+        <div class="about-photo">
+          <div class="image-placeholder">
+            <span>ABOUT PHOTO</span>
+            Add another professional model photo here.
+          </div>
+        </div>
+
+        <div class="about-text">
+
+          <p>
+            King Lyon is a Nigerian fashion and editorial model
+            based in Uyo, Akwa Ibom State.
+          </p>
+
+          <p>
+            With a strong visual presence and a passion for fashion,
+            he is available for runway shows, editorial shoots,
+            fashion campaigns, brand collaborations and creative projects.
+          </p>
+
+          <ul class="about-list">
+            <li><strong>Based:</strong> Uyo, Akwa Ibom, Nigeria</li>
+            <li><strong>Specialties:</strong> Runway, Fashion, Editorial</li>
+            <li><strong>Available:</strong> Campaigns & Collaborations</li>
+            <li><strong>Also:</strong> Short-form Content Creation</li>
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- PORTFOLIO -->
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+
+      <div class="section-title">
+        <small>02 / Selected Work</small>
+        <h2>Portfolio</h2>
+      </div>
+
+      <div class="portfolio-grid">
+
+        <!-- PHOTO 1 -->
+        <div class="portfolio-item">
+          <div class="image-placeholder">
+            <span>PHOTO 01</span>
+            Add runway photo
+          </div>
+          <div class="portfolio-label">
+            <h3>Runway</h3>
+          </div>
+        </div>
+
+        <!-- PHOTO 2 -->
+        <div class="portfolio-item">
+          <div class="image-placeholder">
+            <span>PHOTO 02</span>
+            Add fashion photo
+          </div>
+          <div class="portfolio-label">
+            <h3>Fashion</h3>
+          </div>
+        </div>
+
+        <!-- PHOTO 3 -->
+        <div class="portfolio-item">
+          <div class="image-placeholder">
+            <span>PHOTO 03</span>
+            Add editorial photo
+          </div>
+          <div class="portfolio-label">
+            <h3>Editorial</h3>
+          </div>
+        </div>
+
+        <!-- PHOTO 4 -->
+        <div class="portfolio-item">
+          <div class="image-placeholder">
+            <span>PHOTO 04</span>
+            Add campaign photo
+          </div>
+          <div class="portfolio-label">
+            <h3>Campaign</h3>
+          </div>
+        </div>
+
+        <!-- PHOTO 5 -->
+        <div class="portfolio-item">
+          <div class="image-placeholder">
+            <span>PHOTO 05</span>
+            Add portrait
+          </div>
+          <div class="portfolio-label">
+            <h3>Portrait</h3>
+          </div>
+        </div>
+
+        <!-- PHOTO 6 -->
+        <div class="portfolio-item">
+          <div class="image-placeholder">
+            <span>PHOTO 06</span>
+            Add creative photo
+          </div>
+          <div class="portfolio-label">
+            <h3>Creative</h3>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="container">
+
+      <div class="section-title">
+        <small>03 / What I Do</small>
+        <h2>Services</h2>
+      </div>
+
+      <div class="service-grid">
+
+        <div class="service">
+          <span class="service-number">01</span>
+          <h3>Runway</h3>
+          <p>
+            Available for fashion shows, designer presentations
+            and runway productions.
+          </p>
+        </div>
+
+        <div class="service">
+          <span class="service-number">02</span>
+          <h3>Editorial</h3>
+          <p>
+            Fashion editorials, magazine concepts and
+            creative photography projects.
+          </p>
+        </div>
+
+        <div class="service">
+          <span class="service-number">03</span>
+          <h3>Brand Campaigns</h3>
+          <p>
+            Visual campaigns and promotional content
+            for fashion and lifestyle brands.
+          </p>
+        </div>
+
+        <div class="service">
+          <span class="service-number">04</span>
+          <h3>Content</h3>
+          <p>
+            Short-form visual content for brands,
+            campaigns and creative collaborations.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CALL TO ACTION -->
+  <section class="cta">
+    <div class="container">
+
+      <h2>
+        Make The<br>
+        Image Matter.
+      </h2>
+
+      <p>
+        Working on a fashion campaign, editorial,
+        runway show or creative project?
+        Let's create something unforgettable.
+      </p>
+
+      <a href="#contact" class="btn btn-gold">
+        Start A Booking
+      </a>
+
+    </div>
+  </section>
+
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container">
+
+      <div class="section-title">
+        <small>04 / Contact</small>
+        <h2>Book King Lyon</h2>
+      </div>
+
+      <div class="contact-grid">
+
+        <div class="contact-info">
+
+          <p>
+            For bookings, collaborations, fashion projects,
+            campaigns and creative work, get in touch.
+          </p>
+
+          <p>
+            <strong>Location:</strong><br>
+            Uyo, Akwa Ibom, Nigeria
+          </p>
+
+          <p>
+            <strong>Availability:</strong><br>
+            Nigeria & selected creative projects
+          </p>
+
+        </div>
+
+
+        <div class="contact-links">
+
+          <!-- Replace these links later with the actual details -->
+
+          <a href="#" class="contact-link">
+            Instagram →
+          </a>
+
+          <a href="#" class="contact-link">
+            TikTok →
+          </a>
+
+          <a href="mailto:your@email.com" class="contact-link">
+            Email →
+          </a>
+
+          <a href="#" class="contact-link">
+            WhatsApp →
+          </a>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+    © 2026 <strong>King Lyon</strong>. All rights reserved.
+  </footer>
 
 </body>
 </html>
