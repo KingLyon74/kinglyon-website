@@ -130,6 +130,7 @@ document.getElementById("reqlink").href="https://wa.me/"+W+"?text="+encodeURICom
 document.getElementById("f").onsubmit=function(e){e.preventDefault();var g=function(i){return document.getElementById(i).value||"-"};var t="Booking request for King Lyon\nName: "+g("n")+"\nBrand: "+g("c")+"\nCountry: "+g("k")+"\nProject: "+g("t")+"\nDate: "+g("d")+"\nBudget: "+g("b")+"\nMessage: "+g("m");window.open("https://wa.me/"+W+"?text="+encodeURIComponent(t),"_blank")};
 document.querySelectorAll(".cp").forEach(function(b){b.onclick=function(){var v=b.dataset.v;try{navigator.clipboard.writeText(v).then(function(){b.textContent="Copied"},function(){b.textContent="Select text"})}catch(e){b.textContent="Select text"}setTimeout(function(){b.textContent="Copy"},1500)}});
 </script></body></html>
+meta description
 <link rel="canonical" href="https://kinglyon.netlify.app/">
 <meta name="robots" content="index, follow">
 <meta property="og:type" content="website">
